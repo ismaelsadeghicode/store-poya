@@ -1,16 +1,17 @@
-package com.store.login.domain;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-
-import javax.validation.constraints.Size;
-
-
+@Entity
+@Table
 public class user_registration {
-
+    @Id
+    @GeneratedValue
     private int id;
     private String name;
     private String familyname;
     private String email;
     private String password;
+    public String role;
     public user_registration() {
     }
     public user_registration(String name, String familyname, String email, String password) {
@@ -58,5 +59,13 @@ public class user_registration {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }
