@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/log")
 public class Test {
+    /*
     @Autowired
     RemoteCallService service;
+    
 
     @GetMapping
     public String met(){
@@ -18,6 +20,14 @@ public class Test {
     }
     @GetMapping("/{name}/{na}")
     public user_registration getinformation(@PathVariable String name,@PathVariable String na){
-    return service.getlogininfo(name,na);
+       if( service.getlogininfo(name,na)==null) {
+           return service.getlogininfo(name, na);
+       }
+       else {
+           return service.getlogininfo(name, na);
+
+       }
 }
+
+     */
 }
