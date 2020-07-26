@@ -24,6 +24,7 @@ public class user_registration {
     @Size(min = 7, message = "less that 6")
   //  @Pattern(flags = {""})
     private String password;
+    private String role;
 
     public user_registration() {
     }
@@ -73,5 +74,13 @@ public class user_registration {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }

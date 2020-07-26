@@ -19,7 +19,7 @@ public class Test {
     UserRegistration userRegistration;
     @GetMapping
     public String eth(){
-        return "pooya";
+        return "ROLE_user";
     }
     @InitBinder
     public void initBinder(WebDataBinder dataBinder){
@@ -31,7 +31,7 @@ public class Test {
 if(bindingResult.hasErrors()) {
  return ResponseEntity.ok(bindingResult.getFieldError());
 }
-else {
+else { user.setRole("pooya");
     return ResponseEntity.ok(userRegistration.save(user));
 }
     }
