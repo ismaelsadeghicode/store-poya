@@ -7,7 +7,7 @@ import javax.persistence.GeneratedValue;
 >>>>>>> 7dbeb2abc1aba7e511083013239cf8a4b6b3e3e0
 import javax.persistence.Id;
 import javax.persistence.Table;
-
+//git
 @Entity
 @Table
 public class user_registration {
