@@ -17,7 +17,11 @@ ext {
 }
 
 dependencies {
+<<<<<<< HEAD
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+=======
+implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+>>>>>>> 7dbeb2abc1aba7e511083013239cf8a4b6b3e3e0
 	runtimeOnly 'mysql:mysql-connector-java'
 	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
 	implementation 'org.springframework.cloud:spring-cloud-openfeign-core'
